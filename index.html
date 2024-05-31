@@ -1,0 +1,85 @@
+<html lang="pt-br">
+  <head>
+    <title>primeiro_site</title>
+    
+      <script>
+      
+      function togglePassword() {
+            var passwordField = document.getElementById("password");
+            if (passwordField.type === "password") {
+                passwordField.type = "text";
+            } else {
+                passwordField.type = "password";
+            }
+        }
+      </script>
+      
+      </head>
+      <style>
+    
+      input{display:block;
+        border-radius:15px;
+        border:0;
+        outline:0;
+        padding:0px 50px 0px 20px;}
+      
+    body{background-image:url('/depositphotos_13145860-stock-photo-fresh-snow-cover.jpg');
+          background-repeat:no-repeat;
+          background-size:cover;
+          background-position:center;
+          background-attachment:fixed;
+          font-family:Times;}
+      
+        #dv_btns{display:flex;}
+      </style>
+      <body>
+      <b><i>
+        
+        <h1>PREENCHA SEUS DADOS</h1>
+        
+        <form>
+        <label>Nome:</label>
+        <input type="text" nome="f_nome" placeholder="seu nome" required>
+      <br>
+        <label>Sobrenome:</label>
+        <input type="text" nome="f_sobrenome" placeholder="seu sobrenome" required>
+      <br>
+        <label>E-mail:</label>
+        <input type="text" nome="f_e-mail" placeholder="seu E-mail"required>
+      <br>
+    
+        <label for="password">Senha:</label>
+
+<label for="password">Senha:</label>
+<input type="password" id="password" name="password" maxlength="15" required placeholder="sua senha">
+
+<input type="checkbox" onclick="togglePassword()">
+
+      <br>
+        <label>Telefone:</label>
+        <div style="display:flex;">
+        <input type="tel"nome="f_ddd"placeholder="DDD" size="1" maxlength="2"required>
+        <input type="tel" nome="f_telefone"placeholder="seu telefone" size="6" maxlength="9"required>
+        </div>
+      <br>
+        <label>Endereço:</label>
+        <input type="text" nome="f_endereço "placeholder="seu endereço"required>
+        
+        <p>Gênero:</p>
+        <select>
+          <option></option>
+          <option>Masculino</option>
+          <option>Feminino</option>
+        </select>
+        <br>
+        <br>
+        <input type="radio"name="f"value="trab">Trabalhando 
+        <input type="radio"name="f"value="estu">Estudando 
+        <input type="radio"name="f"value="dese">Desempregado 
+      <br><br> 
+        <input type="submit" value="enviar ">
+      <br>
+        <input type="reset" value="apagar ">
+        </form>
+        </body>
+        </html>
